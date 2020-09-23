@@ -71,4 +71,10 @@ class CookBookTest < Minitest::Test
     assert_equal recipe2, cookbook.highest_calorie_meal
   end
 
+  def test_it_has_a_date_of_creation
+    cookbook = CookBook.new
+
+    assert_equal "09-23-20", cookbook.date
+  end
+
 end
