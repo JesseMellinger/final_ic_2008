@@ -1,6 +1,7 @@
 require './test/test_helper'
 require './lib/recipe'
 require './lib/cook_book'
+require './lib/ingredient'
 
 class CookBookTest < Minitest::Test
 
