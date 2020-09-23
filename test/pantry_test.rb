@@ -1,6 +1,7 @@
 require './test/test_helper'
 require './lib/ingredient'
 require './lib/pantry'
+require './lib/recipe'
 
 class PantryTest < Minitest::Test
 
