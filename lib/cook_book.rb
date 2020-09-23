@@ -22,4 +22,15 @@ class CookBook
     @recipes.max_by {|recipe| recipe.total_calories}
   end
 
+  def summary
+    arr = []
+    @recipes.each() do |recipe|
+      arr << {name: recipe.name,
+      details: {ingredients: [recipe.ingredients_required]},
+      total_calories: recipe.total_calories
+      }
+    end
+    arr
+  end
+
 end
